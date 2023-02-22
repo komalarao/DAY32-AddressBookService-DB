@@ -127,3 +127,14 @@ mysql> select count(state) from addressbook;
 1 row in set (0.00 sec)
 
 mysql>
+================================================UC8==================================================
+mysql> select * from addressbook  order by first_name;
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| first_name | last_name | city       | state         | zip    | phone_number | email                        | serial_number | type   | address |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| komalarao  | paidi     | srikakulam | ANDHRAPRADESH | 532418 |    834125446 | komalaraovakamullu@gmail.com |             2 | friend | NULL    |
+| krishna    | rao       | benglore   | karnataka     | 500135 |    789065432 | krishnarao@gmail.com         |             3 | family | NULL    |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+2 rows in set (0.00 sec)
+
+mysql>
