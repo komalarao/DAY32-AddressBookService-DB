@@ -46,3 +46,15 @@ mysql> desc addressbook;
 10 rows in set (0.01 sec)
 
 mysql>
+============================================UC3=======================================================
+
+mysql> select * from addressbook;
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| first_name | last_name | city       | state         | zip    | phone_number | email                        | serial_number | type   | address |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| srinu      | VAKAMULLU | vizag      | ANDHRAPRADESH | 532829 |    834125446 | srinuvakamullu@gmail.com     |             1 | family | NULL    |
+| komalarao  | VAKAMULLU | srikakulam | ANDHRAPRADESH | 532418 |    834125446 | komalaraovakamullu@gmail.com |             2 | friend | NULL    |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+2 rows in set (0.00 sec)
+
+mysql>
