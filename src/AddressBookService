@@ -176,3 +176,24 @@ mysql> select count(first_name) from addressbook;
 1 row in set (0.00 sec)
 
 mysql>
+=================================================UC11=================================================
+
+mysql> INSERT INTO addressbook (first_name, last_name, Address, City, State,zip,phone_number,email,type)
+    ->  VALUES ('imran', 'sir', 'Brea51', 'Barimnagar', 'Bs',505002,956554875, 'mentor@gmail.com','friend');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> update addressbook set serial_number = 4 where first_name = 'imran';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| first_name | last_name | city       | state         | zip    | phone_number | email                        | serial_number | type   | address |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| komalarao  | paidi     | srikakulam | ANDHRAPRADESH | 532418 |    834125446 | komalaraovakamullu@gmail.com |             2 | family | NULL    |
+| krishna    | rao       | benglore   | karnataka     | 500135 |    789065432 | krishnarao@gmail.com         |             3 | friend | NULL    |
+| imran      | sir       | Barimnagar | Bs            | 505002 |    956554875 | mentor@gmail.com             |             4 | friend | Brea51  |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+3 rows in set (0.00 sec)
+
+mysql>
