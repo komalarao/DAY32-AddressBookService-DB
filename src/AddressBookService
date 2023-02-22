@@ -166,3 +166,13 @@ mysql> select * from addressbook;
 2 rows in set (0.00 sec)
 
 mysql>
+==========================================UC10========================================================
+mysql> select count(first_name) from addressbook;
++-------------------+
+| count(first_name) |
++-------------------+
+|                 2 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql>
