@@ -138,3 +138,31 @@ mysql> select * from addressbook  order by first_name;
 2 rows in set (0.00 sec)
 
 mysql>
+==================================================UC9=================================================
+mysql> update addressbook set type='friend' where first_name ='krishna';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| first_name | last_name | city       | state         | zip    | phone_number | email                        | serial_number | type   | address |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| komalarao  | paidi     | srikakulam | ANDHRAPRADESH | 532418 |    834125446 | komalaraovakamullu@gmail.com |             2 | friend | NULL    |
+| krishna    | rao       | benglore   | karnataka     | 500135 |    789065432 | krishnarao@gmail.com         |             3 | friend | NULL    |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+2 rows in set (0.00 sec)
+
+mysql>  update addressbook set type='family' where first_name ='komalarao';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook;
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| first_name | last_name | city       | state         | zip    | phone_number | email                        | serial_number | type   | address |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+| komalarao  | paidi     | srikakulam | ANDHRAPRADESH | 532418 |    834125446 | komalaraovakamullu@gmail.com |             2 | family | NULL    |
+| krishna    | rao       | benglore   | karnataka     | 500135 |    789065432 | krishnarao@gmail.com         |             3 | friend | NULL    |
++------------+-----------+------------+---------------+--------+--------------+------------------------------+---------------+--------+---------+
+2 rows in set (0.00 sec)
+
+mysql>
