@@ -109,3 +109,21 @@ mysql> select * from addressbook where serial_number = 3;
 1 row in set (0.00 sec)
 
 mysql>
+====================================================UC7================================================
+mysql> select count(city) from addressbook;
++-------------+
+| count(city) |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select count(state) from addressbook;
++--------------+
+| count(state) |
++--------------+
+|            2 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql>
