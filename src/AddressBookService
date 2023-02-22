@@ -1,0 +1,18 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| addressbookservice |
+| basics             |
+| fundamental        |
+| fundamentals       |
+| information_schema |
+| mysql              |
+| payrollservice     |
+| performance_schema |
+| sys                |
+| user_details       |
++--------------------+
+10 rows in set (0.03 sec)
+
+mysql>
